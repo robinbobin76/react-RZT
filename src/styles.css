@@ -91,14 +91,12 @@ body {
 }
 
 .album-cover {
-  height: 76px;
+  width: 88px;
+  height: 88px;
   border-radius: 10px;
-  background: #11152a;
+  object-fit: cover;
   border: 1px solid #2a3158;
-  display: grid;
-  place-items: center;
-  font-size: 42px;
-  color: #9aa4e3;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
 }
 
 .album-caption {
@@ -145,7 +143,7 @@ body {
   outline: none;
   background: linear-gradient(to right, var(--fill-from), var(--fill-to)) 0 0 / var(--progress) 100% no-repeat,
     rgba(255, 255, 255, 0.16);
-  transition: background-size 0.45s cubic-bezier(0.25, 0.7, 0.2, 1), box-shadow 0.3s ease, filter 0.3s ease;
+  transition: background-size 0.65s cubic-bezier(0.22, 0.72, 0.13, 1), box-shadow 0.4s ease, filter 0.4s ease;
 }
 
 .smooth-slider.blue {
@@ -175,8 +173,12 @@ body {
 }
 
 .smooth-slider:hover::-webkit-slider-thumb {
-  transform: scale(1.1);
-  box-shadow: 0 0 14px rgba(170, 196, 255, 0.55);
+  transform: scale(1.13);
+  box-shadow: 0 0 16px rgba(170, 196, 255, 0.6);
+}
+
+.smooth-slider:active::-webkit-slider-thumb {
+  transform: scale(1.2);
 }
 
 .total-row {

@@ -29,7 +29,7 @@ export default function AlbumRatingPage() {
   return (
     <section className="card animate-in">
       <div className="album-header">
-        <div className="album-cover">◉</div>
+        <img className="album-cover" src="/whln-cover.svg" alt="As Arrial Damn - What Happens LN? cover" />
         <div>
           <p className="album-caption">Оценка альбома</p>
           <h2>As Arrial Damn - What Happens LN?</h2>
